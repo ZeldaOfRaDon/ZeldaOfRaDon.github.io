@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Futuristic Computer Repair&Services</title>
+		<style>
+			/* General Reset */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			/* Body and Background */
+			body {
+				font-family: 'Chalkduster', sans-serif;
+				background: linear-gradient(135deg, #0d1117, #14161a);
+				color: #dcdcdc;
+				line-height: 1.6;
+				overflow-x: hidden;
+				padding-bottom: 20px;
+			}
+
+			/* Header Section */
+			header {
+				background: rgba(0, 0, 0, 0.5);
+				text-align: center;
+				padding: 2em 1em;
+				box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+			}
+
+			header h1 {
+				color: #00ffff;
+				font-size: 3em;
+				letter-spacing: 2px;
+				text-shadow: 0 0 10px #00ffff;
+			}
+
+			header p {
+				font-size: 1.2em;
+				color: #8dfaff;
+			}
+
+			/* Sticky Navigation */
+			nav {
+				position: sticky;
+				top: 0;
+				background: rgba(0, 0, 0, 0.8);
+				padding: 10px 0;
+				text-align: center;
+				z-index: 10;
+				box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+			}
+
+			nav a {
+				color: #00ffff;
+				text-decoration: none;
+				margin: 0 15px;
+				font-weight: bold;
+				position: relative;
+				transition: color 0.3s ease;
+			}
+
+			nav a::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				width: 0;
+				height: 2px;
+				background-color: #39ff14;
+				transition: width 0.3s ease-in-out;
+			}
+
+			nav a:hover::after {
+				width: 100%;
+			}
+
+			/* Sections */
+			section {
+				margin: 30px 0;
+				padding: 20px;
+				border-radius: 10px;
+				background: rgba(0, 0, 0, 0.7);
+				box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+			}
+
+			section h2 {
+				color: #39ff14;
+				text-shadow: 0 0 10px #39ff14;
+				margin-bottom: 15px;
+			}
+
+			/* Call to Action Button */
+			.cta-button {
+				display: inline-block;
+				background: #00ffff;
+				color: #000;
+				padding: 10px 20px;
+				border-radius: 5px;
+				text-decoration: none;
+				font-weight: bold;
+				transition: background 0.3s ease;
+			}
+
+			.cta-button:hover {
+				background: #39ff14;
+				color: #000;
+			}
+
+			/* Responsive Design */
+			@media (max-width: 768px) {
+				header h1 {
+					font-size: 2em;
+				}
+				nav a {
+					margin: 5px;
+					display: block;
+				}
+				section {
+					padding: 10px;
+				}
+				.cta-button {
+					display: block;
+					text-align: center;
+					margin: 10px auto;
+				}
+			}
+
+			/* Footer */
+			footer {
+				background: #0d1117;
+				text-align: center;
+				padding: 10px;
+				color: #8dfaff;
+				font-size: 0.9em;
+				box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+			}
+
+			/* Glitch Effect */
+			@keyframes glitch {
+				0% {
+					text-shadow: 2px 0 red, -2px 0 blue;
+				}
+				25% {
+					text-shadow: -2px 0 red, 2px 0 blue;
+				}
+				50% {
+					text-shadow: 2px 0 blue, -2px 0 red;
+				}
+				75% {
+					text-shadow: -2px 0 blue, 2px 0 red;
+				}
+				100% {
+					text-shadow: 2px 0 red, -2px 0 blue;
+				}
+			}
+
+			.glitch {
+				animation: glitch 0.2s infinite;
+				position: relative;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<h1 class="glitch">Futuristic Computer Repair&Services</h1>
+			<p class="glitch">
+				Your Ultimate Tech Solution 4 Tech & Remote-Repair
+			</p>
+		</header>
+
+		<!-- Sticky Navigation -->
+		<nav>
+			<a href="#services">Services</a>
+			<a href="#pricing">Pricing</a>
+			<a href="#faq">FAQ</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<!-- Main Container -->
+		<div class="container">
+			<!-- Services Section -->
+			<section id="services">
+				<h2>Our Services</h2>
+				<ul>
+					<li>Virus & Malware Removal</li>
+					<li>Hardware Diagnostics & Repairs</li>
+					<li>Custom PC Builds</li>
+					<li>Data Backup & Recovery</li>
+					<li>Network Troubleshooting</li>
+					<li>Software Installation & Support</li>
+					<li>System Optimization for Speed</li>
+					<li>
+						We Now Offer Screen-Repair Services Contact For Details
+					</li>
+				</ul>
+				<!-- Call-to-Action -->
+				<a href="#contact" class="cta-button">Book a Service</a>
+			</section>
+
+			<!-- Service Pricing Section -->
+			<section id="pricing">
+				<h2>Our Pricing</h2>
+				<table>
+					<tr>
+						<th>Service</th>
+						<th>Price</th>
+					</tr>
+					<tr>
+						<td>Virus Removal</td>
+						<td>$50</td>
+					</tr>
+					<tr>
+						<td>System Optimization</td>
+						<td>$75</td>
+					</tr>
+					<tr>
+						<td>Custom PC Build</td>
+						<td>$200+</td>
+					</tr>
+				</table>
+			</section>
+
+			<!-- FAQ Section -->
+			<section id="faq">
+				<h2>Frequently Asked Questions</h2>
+				<div class="faq-item">
+					<h3>How long does a repair take?</h3>
+					<p>
+						Most repairs are completed within 24-48 hours, depending
+						on the issue.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3>Do you offer remote services?</h3>
+					<p>
+						Yes! We specialize in remote tech repair and
+						troubleshooting.
+					</p>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section id="contact">
+				<h2>Contact Us</h2>
+				<p><strong>Name:</strong> Rasko Kingston</p>
+				<p>
+					<strong>Email:</strong>
+					<a href="mailto:rasko.kingston@icloud.com"
+						>rasko.kingston@icloud.com</a
+					>
+				</p>
+				<p>
+					<strong>Phone:</strong>
+					<a href="tel:+7706660069">(770) 666-0069</a>
+				</p>
+				<p><strong>Location:</strong> We're 100% Remote</p>
+
+				<!-- Call-to-Action -->
+				<a href="#services" class="cta-button">View Services</a>
+			</section>
+
+			<!-- Donation Section -->
+			<section id="donate">
+				<h2>Support Us</h2>
+				<p>If you love our services, consider donating!</p>
+				<a
+					href="https://venmo.com/RaaLove1"
+					target="_blank"
+					class="cta-button"
+					>Donate via Venmo</a
+				>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>
+				&copy; 2024 Futuristic Computer Services. Designed for the
+				Digital Age. prices and services are subject to change, users
+				prices may vary all shipping fees will be included in total
+				prices
+			</p>
+		</footer>
+	</body>
+</html>
